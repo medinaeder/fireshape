@@ -11,7 +11,7 @@ if d == 2:
     mesh = PeriodicUnitSquareMesh(30, 30)
 elif d== 3:
     mesh = PeriodicUnitCubeMesh(20, 20, 20)
-Q = PeriodicControlSpace(mesh)  #how can we fix the boundary?
+Q = PeriodicControlSpace(mesh)
 #inner = LaplaceInnerProduct(Q)
 inner = ElasticityInnerProduct(Q)
 #inner = H1InnerProduct(Q)
